@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Mbanase Aaliyah Nyirenda for inquiries, commissions, and collaborations.">
+  <title>Contact | Brush & Soul</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Brush & Soul</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HEADER ==================== -->
+  <div class="page-header">
+    <div class="page-header-content">
+      <h1>Contact</h1>
+      <p>I'd love to hear from you</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / Contact
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT - Contact Info -->
+        <div class="contact-info fade-in">
+          <h2 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 10px;">
+            Get in Touch
+          </h2>
+          <div style="width: 60px; height: 3px; background: var(--secondary-color); margin-bottom: 25px;"></div>
+          <p style="color: var(--grey); margin-bottom: 40px; font-weight: 300;">
+            Whether you're interested in purchasing a painting, commissioning 
+            a custom piece, or just want to say hello — I'd love to hear from you.
+          </p>
+
+          <!-- 🔄 CHANGE: Replace with real contact details -->
+          <div class="contact-info-card">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@brushandsoul.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Studio Location</h4>
+              <p>[City, State/Province, Country]</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Studio Hours</h4>
+              <p>Monday – Friday: 10am – 6pm</p>
+              <p>Saturday: By appointment</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div style="margin-top: 20px;">
+            <h4 style="margin-bottom: 15px;">Follow Me</h4>
+            <div class="social-icons">
+              <!-- 🔄 CHANGE: Real social links -->
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT - Contact Form -->
+        <div class="contact-form-wrapper fade-in">
+          <form class="contact-form" id="contactForm">
+            <h2 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 10px;">
+              Send a Message
+            </h2>
+            <div style="width: 60px; height: 3px; background: var(--secondary-color); margin-bottom: 30px;"></div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="purchase">Purchase Inquiry</option>
+                <option value="commission">Custom Commission</option>
+                <option value="exhibition">Exhibition / Collaboration</option>
+                <option value="press">Press / Media</option>
+                <option value="general">General Question</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Budget Range (for commissions)</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select budget range</option>
+                <option value="under500">Under \$500</option>
+                <option value="500-1000">\$500 – \$1,000</option>
+                <option value="1000-2000">\$1,000 – \$2,000</option>
+                <option value="2000-5000">\$2,000 – \$5,000</option>
+                <option value="5000+">\$5,000+</option>
+                <option value="not-applicable">Not Applicable</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell me about what you're looking for..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display: flex; align-items: center; gap: 10px; text-transform: none; letter-spacing: 0; cursor: pointer;">
+                <input type="checkbox" id="newsletter-check" style="width: auto;">
+                Subscribe to newsletter for updates on new works
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+
+            <!-- Success Message (hidden by default) -->
+            <div class="form-success" id="formSuccess" style="display: none;">
+              <i class="fas fa-check-circle" style="font-size: 2rem; color: #27ae60;"></i>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section class="section" style="background: var(--light-color);">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">Common questions about purchasing and commissions</p>
+
+      <div class="faq-container">
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>How do I purchase a painting?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>You can purchase paintings directly from our <a href="shop.html">Shop page</a>. Add items to your cart and proceed to checkout. For originals, you can also contact me directly to discuss the purchase.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Do you accept custom commissions?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! I love creating custom pieces. Fill out the contact form above with details about your vision, preferred size, colors, and budget. I'll get back to you within 48 hours with a proposal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>How long does a commission take?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Depending on the size and complexity, a commission typically takes 2-6 weeks. I'll provide a timeline estimate when we discuss your project.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Do you ship internationally?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! I ship worldwide. All paintings are carefully packaged in protective materials. Shipping costs depend on the size and destination. Free shipping on orders over \$500.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>What is your return policy?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I offer a 14-day return policy for original paintings and prints. The artwork must be returned in its original condition. Custom commissions are non-refundable once approved.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Do paintings come framed?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Canvas paintings are gallery-wrapped and ready to hang. If you'd like a custom frame, I can recommend framers or arrange framing for an additional cost.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MAP SECTION (Optional) ==================== -->
+  <section class="map-section">
+    <!-- 🔄 CHANGE: Replace with her real location or remove this section -->
+    <div style="background: var(--dark); padding: 80px 0; text-align: center; color: white;">
+      <div class="container">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 10px;">Visit the Studio</h2>
+        <p style="color: rgba(255,255,255,0.6); font-weight: 300;">By appointment only</p>
+        <p style="color: var(--accent-color); margin-top: 15px; font-size: 1.1rem;">
+          <i class="fas fa-map-marker-alt"></i> [Full Studio Address, City, Country]
+        </p>
+        <a href="mailto:hello@brushandsoul.com" class="btn btn-primary" style="margin-top: 25px;">
+          Book a Visit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Brush & Soul</h3>
+          <p>Original paintings that inspire and transform spaces. Each piece is created with passion and purpose.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📧 hello@brushandsoul.com</p>
+          <p>📱 +1 (555) 123-4567</p>
+          <p>📍 City, Country</p>
+        </div>
+        <div class="footer-social">
+          <h4>Follow</h4>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Brush & Soul. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

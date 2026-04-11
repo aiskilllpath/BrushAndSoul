@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop original paintings and art prints by [Artist Name]. Unique artwork for your home and collection.">
+  <title>Shop | Brush & Soul</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Brush & Soul</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="cart-btn" id="cartBtn">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HEADER ==================== -->
+  <div class="page-header">
+    <div class="page-header-content">
+      <h1>Shop</h1>
+      <p>Bring home a piece of original art</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / Shop
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SHOP SECTION ==================== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Shop Header with Sort -->
+      <div class="shop-header">
+        <div class="shop-result-count">
+          Showing <span id="resultCount">9</span> artworks
+        </div>
+        <div class="shop-sort">
+          <label for="sortSelect">Sort by:</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="default">Default</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="newest">Newest First</option>
+            <option value="name">Name: A-Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Shop Filters -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="original">Originals</button>
+        <button class="filter-btn" data-filter="print">Prints</button>
+        <button class="filter-btn" data-filter="commission">Commissions</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="shop-grid" id="shopGrid">
+
+        <!-- 🔄 PRODUCT 1 -->
+        <div class="product-card fade-in" data-category="original" data-price="1200" data-name="Golden Horizon">
+          <div class="product-image">
+            <img src="images/paintings/painting1.jpg" alt="Golden Horizon">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-actions">
+              <button class="add-to-cart-btn" 
+                data-id="1" 
+                data-name="Golden Horizon" 
+                data-price="1200" 
+                data-image="images/paintings/painting1.jpg">
+                <i class="fas fa-shopping-bag"></i>
+              </button>
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="wishlist-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Golden Horizon</h3>
+            <p class="product-medium">Oil on Canvas • 24" × 36"</p>
+            <p class="product-price">\$1,200</p>
+          </div>
+        </div>
+
+        <!-- 🔄 PRODUCT 2 -->
+        <div class="product-card fade-in" data-category="original" data-price="950" data-name="Silent Reflections">
+          <div class="product-image">
+            <img src="images/paintings/painting2.jpg" alt="Silent Reflections">
+            <div class="product-actions">
+              <button class="add-to-cart-btn" 
+                data-id="2" 
+                data-name="Silent Reflections" 
+                data-price="950" 
+                data-image="images/paintings/painting2.jpg">
+                <i class="fas fa-shopping-bag"></i>
+              </button>
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="wishlist-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Silent Reflections</h3>
+            <p class="product-medium">Acrylic on Canvas • 30" × 40"</p>
+            <p class="product-price">\$950</p>
+          </div>
+        </div>
+
+        <!-- 🔄 PRODUCT 3 -->
+        <div class="product-card fade-in" data-category="print" data-price="85" data-name="Golden Horizon Print">
+          <div class="product-image">
+            <img src="images/paintings/painting3.jpg" alt="Abstract Dreams Print">
+            <span class="product-badge badge-sale">Sale</span>
+            <div class="product-actions">
+              <button class="add-to-cart-btn" 
+                data-id="3" 
+                data-name="Abstract Dreams Print" 
+                data-price="85" 
+                data-image="images/paintings/painting3.jpg">
+                <i class="fas fa-shopping-bag"></i>
+              </button>
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="wishlist-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Abstract Dreams — Print</h3>
+            <p class="product-medium">Giclée Print • 16" × 20"</p>
+            <p class="product-price">
+              <span class="original-price">\$120</span> \$85
+            </p>
+          </div>
+        </div>
+
+        <!-- 🔄 PRODUCT 4 -->
+        <div class="product-card fade-in" data-category="original" data-price="1800" data-name="Whispers of Autumn">
+          <div class="product-image">
+            <img src="images/paintings/painting4.jpg" alt="Whispers of Autumn">
+            <div class="product-actions">
+              <button class="add-to-cart-btn" 
+                data-id="4" 
+                data-name="Whispers of Autumn" 
+                data-price="1800" 
+                data-image="images/paintings/painting4.jpg">
+                <i class="fas fa-shopping-bag"></i>
+              </button>
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="wishlist-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Whispers of Autumn</h3>
+            <p class="product-medium">Oil on Canvas • 36" × 48"</p>
+            <p class="product-price">\$1,800</p>
+          </div>
+        </div>
+
+        <!-- 🔄 PRODUCT 5 -->
+        <div class="product-card fade-in" data-category="original" data-price="750" data-name="Ocean Serenity">
+          <div class="product-image">
+            <img src="images/paintings/painting5.jpg" alt="Ocean Serenity">
+            <span class="product-badge badge-sold">Sold</span>
+            <div class="product-actions">
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Ocean Serenity</h3>
+            <p class="product-medium">Watercolor • 18" × 24"</p>
+            <p class="product-price" style="text-decoration: line-through; color: #999;">\$750</p>
+            <p style="color: #e74c3c; font-size: 0.85rem; font-weight: 600;">SOLD</p>
+          </div>
+        </div>
+
+        <!-- 🔄 PRODUCT 6 -->
+        <div class="product-card fade-in" data-category="print" data-price="65" data-name="Silent Reflections Print">
+          <div class="product-image">
+            <img src="images/paintings/painting6.jpg" alt="Silent Reflections Print">
+            <div class="product-actions">
+              <button class="add-to-cart-btn" 
+                data-id="6" 
+                data-name="Silent Reflections Print" 
+                data-price="65" 
+                data-image="images/paintings/painting6.jpg">
+                <i class="fas fa-shopping-bag"></i>
+              </button>
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="wishlist-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Silent Reflections — Print</h3>
+            <p class="product-medium">Giclée Print • 12" × 16"</p>
+            <p class="product-price">\$65</p>
+          </div>
+        </div>
+
+        <!-- 🔄 PRODUCT 7 - Commission -->
+        <div class="product-card fade-in" data-category="commission" data-price="2000" data-name="Custom Commission">
+          <div class="product-image">
+            <img src="images/paintings/painting1.jpg" alt="Custom Commission">
+            <span class="product-badge badge-new">Commission</span>
+            <div class="product-actions">
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Custom Portrait Commission</h3>
+            <p class="product-medium">Oil on Canvas • Custom Size</p>
+            <p class="product-price">Starting at \$2,000</p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: 10px; padding: 10px 20px; font-size: 0.75rem;">Inquire Now</a>
+          </div>
+        </div>
+
+        <!-- 🔄 PRODUCT 8 -->
+        <div class="product-card fade-in" data-category="original" data-price="1100" data-name="Dancing Light">
+          <div class="product-image">
+            <img src="images/paintings/painting2.jpg" alt="Dancing Light">
+            <div class="product-actions">
+              <button class="add-to-cart-btn" 
+                data-id="8" 
+                data-name="Dancing Light" 
+                data-price="1100" 
+                data-image="images/paintings/painting2.jpg">
+                <i class="fas fa-shopping-bag"></i>
+              </button>
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="wishlist-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Dancing Light</h3>
+            <p class="product-medium">Acrylic on Canvas • 24" × 30"</p>
+            <p class="product-price">\$1,100</p>
+          </div>
+        </div>
+
+        <!-- 🔄 PRODUCT 9 -->
+        <div class="product-card fade-in" data-category="print" data-price="45" data-name="Ocean Serenity Print">
+          <div class="product-image">
+            <img src="images/paintings/painting5.jpg" alt="Ocean Serenity Print">
+            <div class="product-actions">
+              <button class="add-to-cart-btn" 
+                data-id="9" 
+                data-name="Ocean Serenity Print" 
+                data-price="45" 
+                data-image="images/paintings/painting5.jpg">
+                <i class="fas fa-shopping-bag"></i>
+              </button>
+              <button class="quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="wishlist-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Ocean Serenity — Print</h3>
+            <p class="product-medium">Giclée Print • 8" × 10"</p>
+            <p class="product-price">\$45</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SHIPPING INFO ==================== -->
+  <section class="section" style="background: var(--light-color);">
+    <div class="container">
+      <div class="shipping-info-grid">
+        <div class="shipping-card fade-in">
+          <i class="fas fa-truck"></i>
+          <h3>Free Shipping</h3>
+          <p>Free worldwide shipping on all original paintings over \$500</p>
+        </div>
+        <div class="shipping-card fade-in">
+          <i class="fas fa-box"></i>
+          <h3>Secure Packaging</h3>
+          <p>Every piece is carefully packaged to ensure safe delivery</p>
+        </div>
+        <div class="shipping-card fade-in">
+          <i class="fas fa-certificate"></i>
+          <h3>Certificate of Authenticity</h3>
+          <p>All originals come with a signed certificate</p>
+        </div>
+        <div class="shipping-card fade-in">
+          <i class="fas fa-undo"></i>
+          <h3>14-Day Returns</h3>
+          <p>Not satisfied? Return within 14 days for a full refund</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CART SIDEBAR ==================== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart (<span id="cartItemCount">0</span>)</h3>
+      <button class="cart-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart" id="emptyCart">
+        <i class="fas fa-shopping-bag" style="font-size: 3rem; color: var(--light-grey); margin-bottom: 15px;"></i>
+        <p>Your cart is empty</p>
+        <p style="font-size: 0.85rem; color: var(--grey);">Add some beautiful art!</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">\$0</span>
+      </div>
+      <p style="font-size: 0.8rem; color: var(--grey); margin-bottom: 15px;">
+        Shipping calculated at checkout
+      </p>
+      <button class="btn btn-primary" style="width: 100%; text-align: center;" id="checkoutBtn">
+        Proceed to Checkout
+      </button>
+      <button class="btn btn-outline" style="width: 100%; text-align: center; margin-top: 10px;" id="continueShoppingBtn">
+        Continue Shopping
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== NEWSLETTER ==================== -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Get Notified of New Works</h2>
+      <p>Be the first to know when new paintings are available</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Brush & Soul</h3>
+          <p>Original paintings that inspire and transform spaces. Each piece is created with passion and purpose.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📧 hello@brushandsoul.com</p>
+          <p>📱 +1 (555) 123-4567</p>
+          <p>📍 City, Country</p>
+        </div>
+        <div class="footer-social">
+          <h4>Follow</h4>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Brush & Soul. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

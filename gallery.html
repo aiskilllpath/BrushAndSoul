@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | [Artist Name]</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation (Same as index) -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">[Artist Name]</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="page-header-content">
+      <h1>Gallery</h1>
+      <p>Explore the complete collection of original paintings</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / Gallery
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Filter Buttons -->
+      <!-- 🔄 CHANGE: Adjust categories based on her art styles -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="landscape">Landscapes</button>
+        <button class="filter-btn" data-filter="portrait">Portraits</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+        <button class="filter-btn" data-filter="still-life">Still Life</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- 🔄 CHANGE: Replace ALL placeholder content with her paintings -->
+        <!-- Copy this block for each painting & update: -->
+        <!--   data-category, src, alt, title, medium, dimensions -->
+
+        <div class="gallery-item fade-in" data-category="landscape">
+          <img src="images/paintings/painting1.jpg" alt="Painting Title">
+          <div class="gallery-item-overlay">
+            <h3>Painting Title 1</h3>
+            <p class="medium">Oil on Canvas</p>
+            <p class="dimensions">24" × 36" • 2024</p>
+            <div class="view-icon"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="portrait">
+          <img src="images/paintings/painting2.jpg" alt="Painting Title">
+          <div class="gallery-item-overlay">
+            <h3>Painting Title 2</h3>
+            <p class="medium">Acrylic on Canvas</p>
+            <p class="dimensions">30" × 40" • 2024</p>
+            <div class="view-icon"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="abstract">
+          <img src="images/paintings/painting3.jpg" alt="Painting Title">
+          <div class="gallery-item-overlay">
+            <h3>Painting Title 3</h3>
+            <p class="medium">Mixed Media</p>
+            <p class="dimensions">36" × 48" • 2023</p>
+            <div class="view-icon"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="landscape">
+          <img src="images/paintings/painting4.jpg" alt="Painting Title">
+          <div class="gallery-item-overlay">
+            <h3>Painting Title 4</h3>
+            <p class="medium">Watercolor</p>
+            <p class="dimensions">18" × 24" • 2023</p>
+            <div class="view-icon"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="still-life">
+          <img src="images/paintings/painting5.jpg" alt="Painting Title">
+          <div class="gallery-item-overlay">
+            <h3>Painting Title 5</h3>
+            <p class="medium">Oil on Canvas</p>
+            <p class="dimensions">20" × 20" • 2023</p>
+            <div class="view-icon"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
