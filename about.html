@@ -3,378 +3,316 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shop original paintings and art prints by [Artist Name]. Unique artwork for your home and collection.">
-  <title>Shop | Brush & Soul</title>
+  <meta name="description" content="Learn about Mbanase Nyiri, a professional painter creating stunning contemporary artwork.">
+  <title>About | Mbanase Nyiri — Brush & Soul</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- ==================== NAVIGATION ==================== -->
+  <!-- NAVIGATION -->
   <nav class="navbar scrolled" id="navbar">
     <div class="container">
       <a href="index.html" class="nav-logo">Brush & Soul</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="shop.html" class="active">Shop</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="nav-right">
-        <button class="cart-btn" id="cartBtn">
-          <i class="fas fa-shopping-bag"></i>
-          <span class="cart-count" id="cartCount">0</span>
-        </button>
-      </div>
       <div class="nav-toggle" id="navToggle">
         <span></span><span></span><span></span>
       </div>
     </div>
   </nav>
 
-  <!-- ==================== PAGE HEADER ==================== -->
+  <!-- PAGE HEADER -->
   <div class="page-header">
     <div class="page-header-content">
-      <h1>Shop</h1>
-      <p>Bring home a piece of original art</p>
+      <h1>About the Artist</h1>
+      <p>The story, passion, and vision behind every brushstroke</p>
       <div class="breadcrumb">
-        <a href="index.html">Home</a> / Shop
+        <a href="index.html">Home</a> / About
       </div>
     </div>
   </div>
 
-  <!-- ==================== SHOP SECTION ==================== -->
+  <!-- ABOUT HERO -->
   <section class="section">
     <div class="container">
-
-      <!-- Shop Header with Sort -->
-      <div class="shop-header">
-        <div class="shop-result-count">
-          Showing <span id="resultCount">9</span> artworks
+      <div class="about-hero">
+        <div class="about-hero-image">
+          <img src="images/profile.jpg" alt="Mbanase Nyiri">
         </div>
-        <div class="shop-sort">
-          <label for="sortSelect">Sort by:</label>
-          <select id="sortSelect" class="sort-select">
-            <option value="default">Default</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="newest">Newest First</option>
-            <option value="name">Name: A-Z</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Shop Filters -->
-      <div class="gallery-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="original">Originals</button>
-        <button class="filter-btn" data-filter="print">Prints</button>
-        <button class="filter-btn" data-filter="commission">Commissions</button>
-      </div>
-
-      <!-- Products Grid -->
-      <div class="shop-grid" id="shopGrid">
-
-        <!-- 🔄 PRODUCT 1 -->
-        <div class="product-card fade-in" data-category="original" data-price="1200" data-name="Golden Horizon">
-          <div class="product-image">
-            <img src="images/paintings/painting1.jpg" alt="Golden Horizon">
-            <span class="product-badge badge-new">New</span>
-            <div class="product-actions">
-              <button class="add-to-cart-btn" 
-                data-id="1" 
-                data-name="Golden Horizon" 
-                data-price="1200" 
-                data-image="images/paintings/painting1.jpg">
-                <i class="fas fa-shopping-bag"></i>
-              </button>
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-              <button class="wishlist-btn">
-                <i class="fas fa-heart"></i>
-              </button>
+        <div class="about-hero-text">
+          <h2>Mbanase Nyiri</h2>
+          <p class="artist-title">Professional Painter & Visual Artist</p>
+          <p>
+            Mbanase Nyiri is a contemporary visual artist whose work 
+            spans across figurative art, landscapes, and ink drawings. 
+            Her bold artistic vision brings together the beauty of the 
+            human form, the richness of African landscapes, and the 
+            raw emotion of everyday life.
+          </p>
+          <p>
+            From striking chalk figures on dark canvases to vibrant 
+            African sunsets and delicate ink illustrations, her work 
+            reflects a deep connection to identity, culture, and 
+            the natural world. Each piece tells a unique story, 
+            inviting viewers to pause and connect with something 
+            deeper within themselves.
+          </p>
+          <p>
+            Working primarily with acrylics, chalk, ink, and mixed 
+            media, Mbanase creates art that is both visually stunning 
+            and emotionally powerful. Her paintings can be found in 
+            private collections and have been exhibited in various 
+            galleries and art shows.
+          </p>
+          <div style="margin-top: 30px;">
+            <div class="social-icons">
+              <a href="https://instagram.com/her_real_handle" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </div>
           </div>
-          <div class="product-info">
-            <h3>Golden Horizon</h3>
-            <p class="product-medium">Oil on Canvas • 24" × 36"</p>
-            <p class="product-price">\$1,200</p>
-          </div>
         </div>
-
-        <!-- 🔄 PRODUCT 2 -->
-        <div class="product-card fade-in" data-category="original" data-price="950" data-name="Silent Reflections">
-          <div class="product-image">
-            <img src="images/paintings/painting2.jpg" alt="Silent Reflections">
-            <div class="product-actions">
-              <button class="add-to-cart-btn" 
-                data-id="2" 
-                data-name="Silent Reflections" 
-                data-price="950" 
-                data-image="images/paintings/painting2.jpg">
-                <i class="fas fa-shopping-bag"></i>
-              </button>
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-              <button class="wishlist-btn">
-                <i class="fas fa-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>Silent Reflections</h3>
-            <p class="product-medium">Acrylic on Canvas • 30" × 40"</p>
-            <p class="product-price">\$950</p>
-          </div>
-        </div>
-
-        <!-- 🔄 PRODUCT 3 -->
-        <div class="product-card fade-in" data-category="print" data-price="85" data-name="Golden Horizon Print">
-          <div class="product-image">
-            <img src="images/paintings/painting3.jpg" alt="Abstract Dreams Print">
-            <span class="product-badge badge-sale">Sale</span>
-            <div class="product-actions">
-              <button class="add-to-cart-btn" 
-                data-id="3" 
-                data-name="Abstract Dreams Print" 
-                data-price="85" 
-                data-image="images/paintings/painting3.jpg">
-                <i class="fas fa-shopping-bag"></i>
-              </button>
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-              <button class="wishlist-btn">
-                <i class="fas fa-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>Abstract Dreams — Print</h3>
-            <p class="product-medium">Giclée Print • 16" × 20"</p>
-            <p class="product-price">
-              <span class="original-price">\$120</span> \$85
-            </p>
-          </div>
-        </div>
-
-        <!-- 🔄 PRODUCT 4 -->
-        <div class="product-card fade-in" data-category="original" data-price="1800" data-name="Whispers of Autumn">
-          <div class="product-image">
-            <img src="images/paintings/painting4.jpg" alt="Whispers of Autumn">
-            <div class="product-actions">
-              <button class="add-to-cart-btn" 
-                data-id="4" 
-                data-name="Whispers of Autumn" 
-                data-price="1800" 
-                data-image="images/paintings/painting4.jpg">
-                <i class="fas fa-shopping-bag"></i>
-              </button>
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-              <button class="wishlist-btn">
-                <i class="fas fa-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>Whispers of Autumn</h3>
-            <p class="product-medium">Oil on Canvas • 36" × 48"</p>
-            <p class="product-price">\$1,800</p>
-          </div>
-        </div>
-
-        <!-- 🔄 PRODUCT 5 -->
-        <div class="product-card fade-in" data-category="original" data-price="750" data-name="Ocean Serenity">
-          <div class="product-image">
-            <img src="images/paintings/painting5.jpg" alt="Ocean Serenity">
-            <span class="product-badge badge-sold">Sold</span>
-            <div class="product-actions">
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>Ocean Serenity</h3>
-            <p class="product-medium">Watercolor • 18" × 24"</p>
-            <p class="product-price" style="text-decoration: line-through; color: #999;">\$750</p>
-            <p style="color: #e74c3c; font-size: 0.85rem; font-weight: 600;">SOLD</p>
-          </div>
-        </div>
-
-        <!-- 🔄 PRODUCT 6 -->
-        <div class="product-card fade-in" data-category="print" data-price="65" data-name="Silent Reflections Print">
-          <div class="product-image">
-            <img src="images/paintings/painting6.jpg" alt="Silent Reflections Print">
-            <div class="product-actions">
-              <button class="add-to-cart-btn" 
-                data-id="6" 
-                data-name="Silent Reflections Print" 
-                data-price="65" 
-                data-image="images/paintings/painting6.jpg">
-                <i class="fas fa-shopping-bag"></i>
-              </button>
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-              <button class="wishlist-btn">
-                <i class="fas fa-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>Silent Reflections — Print</h3>
-            <p class="product-medium">Giclée Print • 12" × 16"</p>
-            <p class="product-price">\$65</p>
-          </div>
-        </div>
-
-        <!-- 🔄 PRODUCT 7 - Commission -->
-        <div class="product-card fade-in" data-category="commission" data-price="2000" data-name="Custom Commission">
-          <div class="product-image">
-            <img src="images/paintings/painting1.jpg" alt="Custom Commission">
-            <span class="product-badge badge-new">Commission</span>
-            <div class="product-actions">
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>Custom Portrait Commission</h3>
-            <p class="product-medium">Oil on Canvas • Custom Size</p>
-            <p class="product-price">Starting at \$2,000</p>
-            <a href="contact.html" class="btn btn-primary" style="margin-top: 10px; padding: 10px 20px; font-size: 0.75rem;">Inquire Now</a>
-          </div>
-        </div>
-
-        <!-- 🔄 PRODUCT 8 -->
-        <div class="product-card fade-in" data-category="original" data-price="1100" data-name="Dancing Light">
-          <div class="product-image">
-            <img src="images/paintings/painting2.jpg" alt="Dancing Light">
-            <div class="product-actions">
-              <button class="add-to-cart-btn" 
-                data-id="8" 
-                data-name="Dancing Light" 
-                data-price="1100" 
-                data-image="images/paintings/painting2.jpg">
-                <i class="fas fa-shopping-bag"></i>
-              </button>
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-              <button class="wishlist-btn">
-                <i class="fas fa-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>Dancing Light</h3>
-            <p class="product-medium">Acrylic on Canvas • 24" × 30"</p>
-            <p class="product-price">\$1,100</p>
-          </div>
-        </div>
-
-        <!-- 🔄 PRODUCT 9 -->
-        <div class="product-card fade-in" data-category="print" data-price="45" data-name="Ocean Serenity Print">
-          <div class="product-image">
-            <img src="images/paintings/painting5.jpg" alt="Ocean Serenity Print">
-            <div class="product-actions">
-              <button class="add-to-cart-btn" 
-                data-id="9" 
-                data-name="Ocean Serenity Print" 
-                data-price="45" 
-                data-image="images/paintings/painting5.jpg">
-                <i class="fas fa-shopping-bag"></i>
-              </button>
-              <button class="quick-view-btn">
-                <i class="fas fa-eye"></i>
-              </button>
-              <button class="wishlist-btn">
-                <i class="fas fa-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>Ocean Serenity — Print</h3>
-            <p class="product-medium">Giclée Print • 8" × 10"</p>
-            <p class="product-price">\$45</p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ==================== SHIPPING INFO ==================== -->
+  <!-- STATS -->
+  <section class="section" style="background: var(--secondary-color); color: white;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 class="counter" data-target="50">0</h3>
+          <p>Paintings Created</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="30">0</h3>
+          <p>Happy Collectors</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="5">0</h3>
+          <p>Exhibitions</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="4">0</h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTIST STATEMENT -->
+  <section class="section">
+    <div class="container">
+      <div class="artist-statement">
+        <h2 class="section-title">Artist Statement</h2>
+        <div class="section-line"></div>
+        <div class="statement-content">
+          <blockquote>
+            "Art is my language — the way I speak to the world when 
+            words fall short. Every stroke on my canvas carries a 
+            piece of my story, my heritage, and my vision of the 
+            world as I see it.
+            <br><br>
+            I am drawn to the human form — the way bodies move, 
+            express, and hold untold stories. I am equally captivated 
+            by the landscapes of Africa — the golden sunsets, the 
+            vast savannas, the quiet power of nature.
+            <br><br>
+            Whether I'm working with chalk on a dark canvas, painting 
+            a vivid landscape, or creating delicate ink drawings, my 
+            goal is always the same: to create art that makes you 
+            feel something. Art that stays with you. Art that speaks 
+            to your soul."
+          </blockquote>
+          <p class="statement-signature">— Mbanase Nyiri</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY TIMELINE -->
   <section class="section" style="background: var(--light-color);">
     <div class="container">
-      <div class="shipping-info-grid">
-        <div class="shipping-card fade-in">
-          <i class="fas fa-truck"></i>
-          <h3>Free Shipping</h3>
-          <p>Free worldwide shipping on all original paintings over \$500</p>
+      <h2 class="section-title">My Journey</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">The milestones that shaped my artistic path</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">2020</span>
+            <h3>The Beginning</h3>
+            <p>Discovered a deep passion for visual art. Started 
+               experimenting with different mediums — chalk, ink, 
+               and acrylics.</p>
+          </div>
         </div>
-        <div class="shipping-card fade-in">
-          <i class="fas fa-box"></i>
-          <h3>Secure Packaging</h3>
-          <p>Every piece is carefully packaged to ensure safe delivery</p>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">2021</span>
+            <h3>Finding My Style</h3>
+            <p>Began focusing on figurative art and African landscapes. 
+               Bold chalk on dark canvases became a signature technique.</p>
+          </div>
         </div>
-        <div class="shipping-card fade-in">
-          <i class="fas fa-certificate"></i>
-          <h3>Certificate of Authenticity</h3>
-          <p>All originals come with a signed certificate</p>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">2022</span>
+            <h3>First Exhibition</h3>
+            <p>Showcased original paintings at a local gallery. 
+               Sold first pieces to private collectors.</p>
+          </div>
         </div>
-        <div class="shipping-card fade-in">
-          <i class="fas fa-undo"></i>
-          <h3>14-Day Returns</h3>
-          <p>Not satisfied? Return within 14 days for a full refund</p>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">2023</span>
+            <h3>Growing Community</h3>
+            <p>Built a strong following on Instagram. Started taking 
+               commissions and expanding into ink drawings and mixed media.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">2024</span>
+            <h3>Brush & Soul</h3>
+            <p>Launched this website to share art with the world. 
+               New collections and exhibitions on the horizon.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== CART SIDEBAR ==================== -->
-  <div class="cart-overlay" id="cartOverlay"></div>
-  <div class="cart-sidebar" id="cartSidebar">
-    <div class="cart-header">
-      <h3>Your Cart (<span id="cartItemCount">0</span>)</h3>
-      <button class="cart-close" id="cartClose">&times;</button>
-    </div>
-    <div class="cart-items" id="cartItems">
-      <div class="empty-cart" id="emptyCart">
-        <i class="fas fa-shopping-bag" style="font-size: 3rem; color: var(--light-grey); margin-bottom: 15px;"></i>
-        <p>Your cart is empty</p>
-        <p style="font-size: 0.85rem; color: var(--grey);">Add some beautiful art!</p>
-      </div>
-    </div>
-    <div class="cart-footer" id="cartFooter" style="display: none;">
-      <div class="cart-total">
-        <span>Total:</span>
-        <span id="cartTotal">\$0</span>
-      </div>
-      <p style="font-size: 0.8rem; color: var(--grey); margin-bottom: 15px;">
-        Shipping calculated at checkout
-      </p>
-      <button class="btn btn-primary" style="width: 100%; text-align: center;" id="checkoutBtn">
-        Proceed to Checkout
-      </button>
-      <button class="btn btn-outline" style="width: 100%; text-align: center; margin-top: 10px;" id="continueShoppingBtn">
-        Continue Shopping
-      </button>
-    </div>
-  </div>
+  <!-- CREATIVE PROCESS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">My Creative Process</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">A glimpse into how each painting comes to life</p>
 
-  <!-- ==================== NEWSLETTER ==================== -->
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-number">01</div>
+          <h3>Inspiration</h3>
+          <p>Every painting begins with a spark — a memory, an emotion, 
+             a scene that demands to be captured.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">02</div>
+          <h3>Sketching</h3>
+          <p>Quick sketches and composition studies help me plan the 
+             layout and mood before committing to canvas.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">03</div>
+          <h3>Creating</h3>
+          <p>Layer by layer, the painting takes shape. I work intuitively, 
+             letting the art guide me.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">04</div>
+          <h3>Finishing</h3>
+          <p>The final details bring everything together. Signed and 
+             prepared to find its forever home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IN THE STUDIO -->
+  <section class="section" style="background: var(--light-color);">
+    <div class="container">
+      <h2 class="section-title">In the Studio</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">Where the magic happens</p>
+
+      <div class="studio-grid">
+        <div class="studio-item">
+          <img src="images/about/artist-working.jpg" alt="Artist in studio">
+        </div>
+        <div class="studio-item">
+          <img src="images/paintings/painting3.jpg" alt="Ink drawings">
+        </div>
+        <div class="studio-item">
+          <img src="images/paintings/painting2.jpg" alt="African Sunset">
+        </div>
+        <div class="studio-item">
+          <img src="images/paintings/painting1.jpg" alt="Figure art">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIUMS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Mediums I Work With</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">Exploring art through diverse materials</p>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-number"><i class="fas fa-paint-brush"></i></div>
+          <h3>Acrylic Paint</h3>
+          <p>Bold, vibrant colors on canvas. Perfect for landscapes 
+             and large-scale figurative works.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number"><i class="fas fa-pencil-alt"></i></div>
+          <h3>Chalk & Charcoal</h3>
+          <p>White chalk on dark surfaces creates dramatic contrast. 
+             Signature medium for figure studies.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number"><i class="fas fa-pen-nib"></i></div>
+          <h3>Ink</h3>
+          <p>Delicate line work and flowing forms. Captures movement 
+             and emotion with minimal strokes.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number"><i class="fas fa-layer-group"></i></div>
+          <h3>Mixed Media</h3>
+          <p>Combining multiple materials to create unique textures 
+             and visual depth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section" style="text-align: center; background: var(--dark); color: var(--white);">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Let's Create Something Beautiful</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle" style="color: rgba(255,255,255,0.7);">
+        Interested in a custom commission or want to learn more?
+      </p>
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        <a href="shop.html" class="btn btn-outline" style="border-color: white; color: white;">Visit Shop</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
   <section class="newsletter">
     <div class="container">
-      <h2>Get Notified of New Works</h2>
-      <p>Be the first to know when new paintings are available</p>
+      <h2>Stay Connected</h2>
+      <p>Subscribe for updates on new works and exhibitions</p>
       <form class="newsletter-form" id="newsletterForm">
         <input type="email" placeholder="Enter your email address" required>
         <button type="submit">Subscribe</button>
@@ -382,13 +320,13 @@
     </div>
   </section>
 
-  <!-- ==================== FOOTER ==================== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-about">
           <h3>Brush & Soul</h3>
-          <p>Original paintings that inspire and transform spaces. Each piece is created with passion and purpose.</p>
+          <p>Original paintings that inspire and transform spaces.</p>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
@@ -403,21 +341,18 @@
         <div class="footer-contact">
           <h4>Contact</h4>
           <p>📧 hello@brushandsoul.com</p>
-          <p>📱 +1 (555) 123-4567</p>
           <p>📍 City, Country</p>
         </div>
         <div class="footer-social">
           <h4>Follow</h4>
           <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://instagram.com/her_real_handle" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Brush & Soul. All rights reserved.</p>
+        <p>&copy; 2024 Mbanase Nyiri. All rights reserved.</p>
       </div>
     </div>
   </footer>
